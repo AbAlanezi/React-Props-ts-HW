@@ -44,7 +44,7 @@ const movie:Movie[]  = [
 function Movies() {
     
   return (
-    <>
+    <div>
     {movie.map((mov, i) => {
         let masseg = ''
         if(!mov.available == false){
@@ -57,7 +57,7 @@ function Movies() {
               <div className='contenr'>
 
               <div id="card">
-            <img id="img" height={100} src={mov.img} alt=''></img>
+            <img id="img" height={100} src={mov.img} ></img>
             <h2 id="title">{mov.name}</h2>
             <p id="desc">{mov.date}</p>
             <p id="desc">{mov.available}</p>
@@ -67,7 +67,7 @@ function Movies() {
             </div>
         )
     })}
-    </>
+    </div>
   )
 }
 

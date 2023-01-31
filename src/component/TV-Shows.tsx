@@ -42,7 +42,7 @@ const shows:TVShows[]  = [
 function TVShows() {
   return (
     <div>
-          <>
+          <div>
     {shows.map((sho, i) => {
         let masseg = ''
         if(!sho.available == false){
@@ -64,7 +64,7 @@ function TVShows() {
             </div>
         )
     })}
-    </>
+    </div>
     </div>
   )
 }
