@@ -51,14 +51,14 @@ function Movies() {
     
   return (
     <div>
-    {movie.map((mov, i) => {
+    {movie.map((mov) => {
         let masseg = ''
         if(!mov.available == false){
             masseg = 'soon'
         }
 
         return(
-            <div key={i}>
+            <div >
 
               <div className='contenr'>
 
