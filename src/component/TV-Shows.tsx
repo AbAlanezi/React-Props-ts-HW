@@ -49,14 +49,11 @@ function TVShows() {
   return (
     <div>
           <div>
-    {shows.map((sho, i) => {
-        let masseg = ''
-        if(!sho.available == false){
-            masseg = 'soon'
-        }
+    {shows.map((sho) => {
+
 
         return(
-            <div key={i}>
+            <div>
            <div className='contenr'>
 
               <div id="card">
@@ -65,7 +62,7 @@ function TVShows() {
             <p id="desc">{sho.date}</p>
             <p id="desc">{sho.evaluation}</p>
             <p id="desc">{sho.available}</p>
-              {masseg.length > 0 ? <p className='masseg'>{masseg}</p>: <span></span>}
+            <p>{sho.available ? " avalibl": " soon"}</p>
              </div>
            </div>
             </div>

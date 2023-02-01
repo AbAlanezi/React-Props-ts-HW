@@ -52,10 +52,7 @@ function Movies() {
   return (
     <div>
     {movie.map((mov) => {
-        let masseg = ''
-        if(!mov.available == false){
-            masseg = 'soon'
-        }
+
 
         return(
             <div >
@@ -68,7 +65,7 @@ function Movies() {
             <p id="desc">{mov.date}</p>
             <p id="desc">{mov.evaluation}</p>
             <p id="desc">{mov.available}</p>
-              {masseg.length > 0 ? <p className='masseg'>{masseg}</p>: <span></span>}
+            <p>{mov.available ? " avalibl": " soon"}</p>
              </div>
               </div>
             </div>

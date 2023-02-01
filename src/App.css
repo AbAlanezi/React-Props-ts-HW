@@ -1,5 +1,16 @@
 
 /*************** card ***************/
+
+.contenr-card{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid: 20px;
+  text-align: center;
+  margin-left: 2%;
+background-color: #fff;
+padding: 20px;
+color: #000;
+}
 .contenr{
   margin: 5%;
   display: flex;
